@@ -16,9 +16,9 @@ namespace Task4
             int cars = 1;
             string message = "Количество вариантов доставки = {0}";
 
-            if (clients == 1)
+            if (clients == 1 || clients == 0)
             {
-                Console.WriteLine(string.Format(message, clients));
+                Console.WriteLine(string.Format(message, cars));
             } else
             {
                 do
