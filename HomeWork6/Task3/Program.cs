@@ -65,6 +65,7 @@ namespace Task3
             Console.WriteLine("Ромб");
 
             int spaceRomb = 10;
+            int symbolsRomb = 0;
             
 
             for (int i = 0; i < 10; i++)
@@ -80,36 +81,34 @@ namespace Task3
 
                 for (int k = 0; k <= (i * 2); k++)
                 {
-                    Console.Write("*");                    
+                    Console.Write("*");
+                    
                 }
+                symbolsRomb++;
                 Console.Write("\n");
             }
 
+            symbolsRomb *= 2;
 
             for (int i = 0; i < 10; i++)
             {
                 
-                for (int j = 0; j < spaceRomb; j++)
+                for (int j = -2; j < spaceRomb; j++)
                 {
                     Console.Write(" ");
                 }
+                spaceRomb++;
 
 
-                for (int k = 0; k < 20; k++)
+                for (int k = symbolsRomb; k >= spaceRomb+1; k--)
                 {
                     Console.Write("*");                    
                 }
 
-
-
-                
+                symbolsRomb--;
 
                 Console.Write("\n");
             }
-
-            
-
-            
         }
 
     }
