@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeWork5
+namespace Task2
 {
     class Program
     {
@@ -17,11 +17,11 @@ namespace HomeWork5
             if (number % 2 == 0)
             {
                 Console.WriteLine($"Number {number} is even");
-            } else
+            }
+            else
             {
                 Console.WriteLine($"Number {number} is not even");
             }
-            
         }
     }
 }
