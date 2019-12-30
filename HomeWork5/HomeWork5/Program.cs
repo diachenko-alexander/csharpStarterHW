@@ -11,6 +11,7 @@ namespace HomeWork5
         static void Main(string[] args)
         {
             // Вариант 1
+            Console.Write("Enter number: ");
             int number = int.Parse(Console.ReadLine());
 
             if (number % 2 == 0)
