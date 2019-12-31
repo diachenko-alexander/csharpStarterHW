@@ -11,9 +11,9 @@ namespace Task4
         static void Main(string[] args)
         {
             Console.WriteLine("Check number");
-
-
-            
+            Console.WriteLine("Please enter number to check");
+            CheckUserNumber(int.Parse(Console.ReadLine()));
+                                   
         }
 
 
@@ -56,6 +56,33 @@ namespace Task4
             }
 
             return true;
+        }
+
+        static void CheckUserNumber( int number)
+        {
+            if (IsPositiv(number))
+            {
+                Console.WriteLine("Number is positiv");
+            } else
+            {
+                Console.WriteLine("Number is negativ");
+            }
+
+            if (IsPrime(number))
+            {
+                Console.WriteLine("Number is prime");
+            } else
+            {
+                Console.WriteLine("Number is not prime");
+            }
+
+            if (IsDividedWithoutRestOn (number, 2, 5, 3, 6, 9))
+            {
+                Console.WriteLine("Is divided without rest on 2,5,3,6,9");
+            }else
+            {
+                Console.WriteLine("Is not divided without rest on 2,5,3,6,9");
+            }
         }
 
     }
