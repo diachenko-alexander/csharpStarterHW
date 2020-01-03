@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -13,10 +9,10 @@ namespace ConsoleApp1
             Console.Write("Enter array lenght: ");
             int arrayLenght = int.Parse(Console.ReadLine());
 
-            int [] array = new int[arrayLenght];
+            int[] array = new int[arrayLenght];
             Random rnd = new Random();
 
-            for(int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 int random = rnd.Next(100);
                 array[i] = random;
